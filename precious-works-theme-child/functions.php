@@ -11,6 +11,12 @@ define( 'PW_THEME_CHILD_VERSION', $theme->get( 'Version' ) );
 function pw_enqueue_scripts() {
     wp_enqueue_style( 'parent-style', get_stylesheet_directory_uri() . '/assets/dist/css/style.min.css', [], PW_THEME_CHILD_VERSION );
 
+     wp_enqueue_style(
+        'raleway-font',
+        'https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap',
+        array(),
+        null
+    );
     // Then enqueue child style, dependent on parent-style
     // wp_enqueue_style( 'pw-style', get_stylesheet_directory_uri() . '/assets/dist/css/style.min.css', ['parent-style'], PW_THEME_CHILD_VERSION );
     

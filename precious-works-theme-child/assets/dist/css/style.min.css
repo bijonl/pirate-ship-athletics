@@ -27,6 +27,10 @@
   margin: 24px 0 8px !important;
 }
 
+.media-modal .media-frame .media-search-input-label {
+  color: black;
+}
+
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -116,11 +120,11 @@
   --bs-tertiary-bg: #f8f9fa;
   --bs-tertiary-bg-rgb: 248, 249, 250;
   --bs-heading-color: inherit;
-  --bs-link-color: #0066cc;
-  --bs-link-color-rgb: 0, 102, 204;
+  --bs-link-color: #E87722;
+  --bs-link-color-rgb: 232, 119, 34;
   --bs-link-decoration: underline;
-  --bs-link-hover-color: #222;
-  --bs-link-hover-color-rgb: 34, 34, 34;
+  --bs-link-hover-color: #00539f;
+  --bs-link-hover-color-rgb: 0, 83, 159;
   --bs-code-color: #d63384;
   --bs-highlight-color: #212529;
   --bs-highlight-bg: rgb(255, 242.6, 205.4);
@@ -6983,6 +6987,25 @@ progress {
   margin-bottom: 0;
 }
 
+.nav-list-style {
+  list-style: none;
+  margin-left: 0;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+}
+.nav-list-style.column-list {
+  flex-direction: column;
+}
+.nav-list-style li {
+  line-height: 1;
+  margin-bottom: 0;
+}
+.nav-list-style li a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .rounded-corners {
   border-radius: 12px;
 }
@@ -6993,25 +7016,25 @@ progress {
 
 .background-primary {
   color: black;
-  background-color: red;
+  background-color: #EDEDED;
 }
 
 .background-secondary {
   color: black;
-  background-color: red;
+  background-color: #EDEDED;
 }
 
 .heading-font {
-  font-family: "Inter", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .body-text-font {
-  font-family: "Georgia", serif;
+  font-family: "Raleway", serif;
 }
 
 .u-focus-style:focus, .u-focus-style:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(0, 119, 204, 0.4);
+  box-shadow: 0 0 0 3px rgba(244, 115, 33, 0.4);
   border-radius: inherit;
 }
 
@@ -7039,7 +7062,7 @@ progress {
   display: inline-block;
   background-color: #333333;
   border: solid 1px #333333;
-  color: #ffffff;
+  color: #EDEDED;
   line-height: 1;
   border-radius: 30px;
   font-weight: 400;
@@ -7054,7 +7077,7 @@ progress {
 .pw-solid-button:hover, .pw-solid-button:focus, .pw-solid-button:focus-visible {
   font-weight: 600;
   border-radius: 30px;
-  background-color: #ffffff;
+  background-color: #EDEDED;
   color: #333333;
   border: solid 1px #333333;
   text-decoration: none;
@@ -7108,10 +7131,10 @@ progress {
 
 body {
   background-color: white;
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
   line-height: 1.6;
-  color: #222;
+  color: #444444;
 }
 
 .block-section {
@@ -7130,42 +7153,42 @@ html :where(.wp-block) {
 }
 
 h1, .h1 {
-  font-family: "Inter", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.2;
 }
 
 h2, .h2 {
-  font-family: "Inter", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 2rem;
   font-weight: 700;
   line-height: 1.2;
 }
 
 h3, .h3 {
-  font-family: "Inter", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 1.75rem;
   font-weight: 700;
   line-height: 1.2;
 }
 
 h4, .h4 {
-  font-family: "Inter", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.2;
 }
 
 h5, .h5 {
-  font-family: "Inter", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.2;
 }
 
 h6, .h6 {
-  font-family: "Inter", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.2;
@@ -7182,11 +7205,11 @@ p {
 }
 
 a {
-  color: #0066cc;
+  color: #E87722;
   text-decoration: none;
 }
 a:hover, a:focus {
-  color: #222;
+  color: #00539f;
   text-decoration: underline;
 }
 
@@ -7199,7 +7222,7 @@ ul li, ol li {
 }
 
 blockquote {
-  font-family: "Georgia", serif;
+  font-family: "Raleway", serif;
   font-style: italic;
   margin: 1.5em 0;
   padding-left: 1em;
@@ -7573,7 +7596,7 @@ small, .small {
 .reviews-section .reviews-container .reviews-row .reviews-col .masonry-review-card .review-content blockquote {
   all: unset;
   display: block;
-  font-family: "Inter", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   margin: 0;
   padding: 0;
@@ -7593,7 +7616,7 @@ small, .small {
 }
 
 .accordions-container .accordions-row .accordions-col .single-accordion {
-  border: 2px solid #666666;
+  border: 2px solid #444444;
   margin-bottom: 20px;
   color: inherit;
   overflow: hidden;
@@ -7613,7 +7636,7 @@ small, .small {
   transition: background-color 0.25s ease;
 }
 .accordions-container .accordions-row .accordions-col .single-accordion .accordion:hover {
-  background-color: rgb(216.75, 216.75, 216.75);
+  background-color: rgb(182.75, 182.75, 182.75);
 }
 .accordions-container .accordions-row .accordions-col .single-accordion .accordion svg {
   transition: transform 0.25s ease;
@@ -7637,20 +7660,25 @@ small, .small {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  color: white;
+  color: #111111;
 }
 .homepage-hero-section.block-section {
   padding-top: 0;
   padding-bottom: 0;
 }
 .homepage-hero-section .image-overlay {
-  background-color: black;
-  opacity: 0.5;
+  background-color: #EDEDED;
+  opacity: 1;
   z-index: 1;
 }
 .homepage-hero-section .homepage-hero-container {
   z-index: 2;
   position: relative;
+}
+.homepage-hero-section .homepage-hero-container .homepage-hero-row .homepage-hero-image-col .image-canvas {
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .homepage-hero-section .homepage-hero-container .homepage-hero-row .homepage-hero-col .homepage-hero-content-wrapper .title-area-content-wrapper {
   padding-bottom: 30px;
