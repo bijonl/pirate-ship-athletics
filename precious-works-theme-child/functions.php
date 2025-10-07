@@ -7,6 +7,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 $theme = wp_get_theme();
 define( 'PW_THEME_CHILD_VERSION', $theme->get( 'Version' ) );
 
+add_image_size( 'landscape-thumbnail', 600, 400, false); 
+
 
 function pw_enqueue_scripts() {
     wp_enqueue_style( 'parent-style', get_stylesheet_directory_uri() . '/assets/dist/css/style.min.css', [], PW_THEME_CHILD_VERSION );

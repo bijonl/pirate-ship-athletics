@@ -7268,6 +7268,7 @@ small, .small {
 .blog-archive-content-section .blog-posts-container .blog-posts-row .blog-posts-col .single-post-tile .single-post-image-wrapper img {
   width: 100%;
   height: auto;
+  aspect-ratio: 3/2;
 }
 .blog-archive-content-section .blog-posts-container .blog-posts-row .blog-posts-col .single-post-tile .post-meta-wrapper a:hover {
   text-decoration: none;
@@ -7609,6 +7610,7 @@ small, .small {
 }
 .recent-posts-section .recent-posts-container .recent-posts-row .recent-posts-col .single-post-tile .single-post-image-wrapper img {
   width: 100%;
+  aspect-ratio: 3/2;
   height: auto;
 }
 .recent-posts-section .recent-posts-container .recent-posts-row .recent-posts-col .single-post-tile .single-post-title-wrapper {
