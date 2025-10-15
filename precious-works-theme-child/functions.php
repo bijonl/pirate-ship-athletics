@@ -46,6 +46,16 @@ add_action('wp_enqueue_scripts', 'pw_enqueue_glightbox_assets');
 add_action( 'wp_enqueue_scripts', 'pw_enqueue_scripts', 20 );
 add_action( 'enqueue_block_editor_assets', 'pw_enqueue_scripts' );
 
+if ( !function_exists( 'pw_register_nav_menus' ) ) {
+    function pw_register_nav_menus() {
+        register_nav_menus( array(
+            'primary' => __( 'Primary Menu', 'pw' ),
+            'footer-menu' => __( 'Footer Menu', 'pw' ),
+
+        ) );
+    };
+}
+
 
 
 

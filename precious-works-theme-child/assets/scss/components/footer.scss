@@ -9,7 +9,27 @@
             .footer-logo-wrapper {
                 max-width: 100px; 
             }
+
+            .footer-navigation {
+                ul {
+                    gap: 40px; 
+                    li {
+                        a {
+                            color: $color-accent; 
+                            transition: all 0.2s ease-in;
+                            letter-spacing: 1px; 
+                            &:hover {
+                                font-weight: 800;
+                            }
+                        }
+                    }
+                }
+            }
         
+        }
+        .copyright-row {
+            margin-top: 25px; 
+            font-size: 12px; 
         }
     }
 }

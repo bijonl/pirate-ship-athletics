@@ -7060,8 +7060,8 @@ progress {
 
 .pw-solid-button {
   display: inline-block;
-  background-color: #333333;
-  border: solid 1px #333333;
+  background-color: #f47321;
+  border: solid 1px #f47321;
   color: #EDEDED;
   line-height: 1;
   border-radius: 30px;
@@ -7421,8 +7421,14 @@ small, .small {
 }
 .site-header .site-header-container .site-header-row .site-header-mobile-button-col nav a,
 .site-header .site-header-container .site-header-row .header-menu-col nav a {
-  color: inherit;
+  letter-spacing: 1px;
+  color: #f47321;
   text-decoration: none;
+  transition: all 0.2s ease-in;
+}
+.site-header .site-header-container .site-header-row .site-header-mobile-button-col nav a:hover,
+.site-header .site-header-container .site-header-row .header-menu-col nav a:hover {
+  font-weight: 800;
 }
 .site-header .site-header-container .site-header-row .header-menu-col {
   display: none;
@@ -7563,6 +7569,21 @@ small, .small {
 .site-footer .site-footer-content-container .site-footer-content-row .footer-logo-wrapper {
   max-width: 100px;
 }
+.site-footer .site-footer-content-container .site-footer-content-row .footer-navigation ul {
+  gap: 40px;
+}
+.site-footer .site-footer-content-container .site-footer-content-row .footer-navigation ul li a {
+  color: #f47321;
+  transition: all 0.2s ease-in;
+  letter-spacing: 1px;
+}
+.site-footer .site-footer-content-container .site-footer-content-row .footer-navigation ul li a:hover {
+  font-weight: 800;
+}
+.site-footer .site-footer-content-container .copyright-row {
+  margin-top: 25px;
+  font-size: 12px;
+}
 
 .title-area-container .title-area-row .title-area-col .title-area-content-wrapper {
   padding-bottom: 60px;
@@ -7654,6 +7675,17 @@ small, .small {
 }
 .accordions-container .accordions-row .accordions-col .single-accordion .accordion-content.is-open {
   padding: 16px;
+}
+
+.call-to-action-section {
+  background-color: #f47321;
+  color: #13294B;
+}
+.call-to-action-section .pw-solid-button {
+  background-color: #13294B;
+}
+.call-to-action-section .pw-solid-button:hover, .call-to-action-section .pw-solid-button:focus, .call-to-action-section .pw-solid-button:focus-visible {
+  background-color: #EDEDED;
 }
 
 .homepage-hero-section {
@@ -7759,6 +7791,7 @@ small, .small {
   padding-bottom: 20px;
 }
 .wildcards-section .wildcards-container .wildcards-row .wildcards-col .single-wildcard-wrapper .wildcard-image-wrapper i {
+  color: #13294B;
   font-size: 65px;
 }
 .wildcards-section .wildcards-container .wildcards-row .wildcards-col .single-wildcard-wrapper .wildcard-image-wrapper:has(img) {

@@ -10,6 +10,7 @@
                         margin: auto;
                         padding-bottom: $wildcard-element-spacing; 
                         i {
+                            color: $color-tertiary; 
                             font-size: 65px; 
                         }
                         &:has(img) {

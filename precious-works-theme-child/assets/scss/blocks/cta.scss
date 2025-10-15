@@ -1,0 +1,11 @@
+.call-to-action-section {
+    background-color: $color-accent; 
+    color: $color-tertiary; 
+    .pw-solid-button {
+        background-color: $color-tertiary; 
+        &:hover, &:focus, &:focus-visible {
+            background-color: $color-background; 
+        }
+
+    }
+}
