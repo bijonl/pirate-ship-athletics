@@ -15,7 +15,7 @@ $hero-title-size: 65px;
 $homepage-hero-height: 100vh; 
 
 // Interior Hero Variables
-$interior-hero-bg: transparent; 
+$interior-hero-bg: $color-background; 
 $title-width: 50%; 
 $image-height: 700px; 
 $image-width: 50%; 
@@ -27,7 +27,7 @@ $title-element-spacing: 25px;
 $recent-post-spacing: 20px; 
 
 // Review Variable
-$review-border-color: black; 
+$review-border-color: $color-tertiary;  
 
 // Wildcard Variables
 $wildcard-element-spacing: 20px; 

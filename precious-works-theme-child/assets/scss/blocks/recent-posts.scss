@@ -4,6 +4,25 @@
         .recent-posts-row {
             .recent-posts-col {
                 .single-post-tile {
+                    a {
+                        transition: all 0.2s ease-in-out;
+                    }
+                    
+                    &:hover {
+                        a {
+                            transition: all 0.2s ease-in;
+                            text-decoration: none;
+                            .single-post-title-wrapper {
+                                color: $color-accent; 
+                                letter-spacing: 1px;
+                            }
+                            .single-post-date-wrapper {
+                                color: $base-text-color; 
+                            }
+                        }
+                       
+                      
+                    }
                     .single-post-image-wrapper {
                         padding-bottom: $recent-post-spacing; 
                         img {
@@ -13,7 +32,9 @@
                         }
                     }
                     .single-post-title-wrapper {
+                        transition: all 0.2s ease-in;
                         padding-bottom: $recent-post-spacing; 
+                        text-decoration: none; 
                     }
                 }
             }
