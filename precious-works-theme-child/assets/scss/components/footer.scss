@@ -8,6 +8,9 @@
             @import './partials/social-list'; 
             .footer-logo-wrapper {
                 max-width: 100px; 
+                img {
+                    filter: brightness(0) invert(1);
+                }
             }
 
             .footer-navigation {
@@ -15,10 +18,10 @@
                     gap: 40px; 
                     li {
                         a {
-                            color: $color-accent; 
                             transition: all 0.2s ease-in;
                             letter-spacing: 1px; 
                             &:hover {
+                                color: $color-accent; 
                                 font-weight: 800;
                             }
                         }
@@ -29,7 +32,12 @@
         }
         .copyright-row {
             margin-top: 25px; 
-            font-size: 12px; 
+            .footer-copyright-col {
+                font-size: 12px; 
+            }
+            .social-list {
+                gap: 30px; 
+            }
         }
     }
 }

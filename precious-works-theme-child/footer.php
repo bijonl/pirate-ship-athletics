@@ -10,11 +10,7 @@ $footer_logo = get_field('footer_logo', 'options');
             <div class="footer-logo-col col">
                 <?php include locate_template('components/footer/footer-logo.php'); ?>
             </div>
-            <?php if (have_rows('social_media_footer', 'options')) { ?>
-                <nav class="footer-social-col col" role="navigation" aria-label="Social Media Links">
-                    <?php include locate_template('components/footer/social-icons.php'); ?>
-                </nav>
-            <?php }; ?>
+           
             <div class="footer-logo-col col">
                  <nav id="footer-navigation" class="footer-navigation nav-list-style justify-content-end" role="navigation" aria-label="Footer Navigation">
                     <?php 
@@ -29,10 +25,15 @@ $footer_logo = get_field('footer_logo', 'options');
                 </nav>
             </div>
         </div>
-        <div class="copyright-row">
+        <div class="copyright-row row">
              <div class="footer-copyright-col col">
                 <?php include locate_template('components/footer/copyright.php'); ?>
             </div>
+            <?php if (have_rows('social_media_footer', 'options')) { ?>
+                <nav class="footer-social-col col" role="navigation" aria-label="Social Media Links">
+                    <?php include locate_template('components/footer/social-icons.php'); ?>
+                </nav>
+            <?php }; ?>
         </div>
     </div>
 </footer>

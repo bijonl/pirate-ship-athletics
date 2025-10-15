@@ -40,7 +40,7 @@ $solid-button-border-color: $color-accent;
 $solid-button-text-color: $color-background; 
 $solid-button-padding-horizontal: 16px;
 $solid-button-padding-vertical: 12px;
-$solid-button-border-radius: 30px; 
+$solid-button-border-radius: 0px; 
 $solid-button-min-width: 200px; 
 
 $solid-button-background-hover: $color-background; 
@@ -49,8 +49,8 @@ $solid-button-border-color-hover: $color-primary;
 
 // Footer Variables
 $footer-padding: 30px; 
-$footer-background-color: $color-background; 
-$footer-color: $base-text-color; 
+$footer-background-color: $color-tertiary; 
+$footer-color: $color-background; 
 
 // ===============================
 // Header Variables

@@ -9,6 +9,32 @@
       position: sticky;
       top: 0;
       z-index: 1020;
+      background-color: $color-tertiary; 
+      
+      transition: all 0.2s ease-in; 
+      .site-header-container {
+        padding-top: 3px; 
+        padding-bottom: 3px; 
+          .site-header-row {
+              .site-header-logo-col .site-brand-logo-wrapper  {
+                width: 50px; 
+                a {
+                  img {
+                      filter: brightness(0) invert(1);
+                  }
+                }
+              }
+              .header-menu-col nav ul li {
+                a {
+                  color: $color-background; 
+
+                }
+              }
+          }
+      
+      }
+     
+
   }
 
   .site-header-container {
@@ -22,6 +48,7 @@
         .site-brand-logo-wrapper {
           width: $header-logo-width;
           height: $header-logo-height;
+          transition: all 0.2s ease-in-out;
         }
       }
 
@@ -37,6 +64,10 @@
             padding: 0;
             li {
               margin-bottom: 0; 
+              &.current_page_item {
+                font-weight: 800;
+                letter-spacing: 1px;
+              }
             }
           }
 
