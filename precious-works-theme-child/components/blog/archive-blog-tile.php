@@ -24,7 +24,7 @@
             </ul>
         <?php } ?>
         <div class="single-post-date-wrapper">
-            <p><?php echo $publish_date ?></p>
+            <p><?php echo get_the_date();  ?></p>
         </div>
     </div>
 </div>
