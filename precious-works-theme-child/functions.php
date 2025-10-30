@@ -46,6 +46,9 @@ add_action('wp_enqueue_scripts', 'pw_enqueue_glightbox_assets');
 add_action( 'wp_enqueue_scripts', 'pw_enqueue_scripts', 20 );
 add_action( 'enqueue_block_editor_assets', 'pw_enqueue_scripts' );
 
+require_once get_stylesheet_directory() . '/includes/custom-post-types/certifications.php';
+
+
 
 
 
