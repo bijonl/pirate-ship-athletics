@@ -17,9 +17,11 @@ if (!$has_content) {
     <div class="certifications-container container">
 
     <?php if($certifications_and_awards) { ?>
-         <div class="certifications-row row row-cols-3">
+         <div class="certifications-row row">
             <?php foreach($certifications_and_awards as $certification) { ?>
-                <?php include(locate_template('blocks/certifications-and-awards/partials/single-certification.php')); ?>       
+                <div class="col-sm-4 certifications-col">
+                    <?php include(locate_template('blocks/certifications-and-awards/partials/single-certification.php')); ?> 
+                </div>      
             <?php } ?>
         </div>
     <?php } ?>

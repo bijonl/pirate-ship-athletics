@@ -1,0 +1,40 @@
+.certification-and-awards-section {
+    background-color: #ededed; 
+
+    .certifications-col {
+        margin-bottom: 20px;
+    }
+    .certification-card {
+        &.open {
+            height: auto; 
+        }
+        border: solid 2px $color-accent; 
+        .certification-card-content-wrapper {
+            padding: 20px; 
+            background-color: #EDEDED; 
+
+            .certification-card-description-wrapper {
+                padding-bottom: 20px; 
+                p {
+                    margin-bottom: 0; 
+                }
+            }
+
+            .readmore-btn {
+                padding: 0; 
+                background-color: none; 
+                border: none; 
+                color: $color-accent; 
+            }
+
+            .certification-card-read-more-wrapper {
+                overflow: hidden;
+                transition: max-height 0.3s ease-in-out;
+                max-height: 0;
+            }
+
+        }
+
+    }
+
+}

@@ -6983,7 +6983,7 @@ progress {
     display: none !important;
   }
 }
-.wysiwyg p:last-child() {
+.wysiwyg p:last-child {
   margin-bottom: 0;
 }
 
@@ -7728,6 +7728,40 @@ small, .small {
 }
 .accordions-container .accordions-row .accordions-col .single-accordion .accordion-content.is-open {
   padding: 16px;
+}
+
+.certification-and-awards-section {
+  background-color: #ededed;
+}
+.certification-and-awards-section .certifications-col {
+  margin-bottom: 20px;
+}
+.certification-and-awards-section .certification-card {
+  border: solid 2px #f47321;
+}
+.certification-and-awards-section .certification-card.open {
+  height: auto;
+}
+.certification-and-awards-section .certification-card .certification-card-content-wrapper {
+  padding: 20px;
+  background-color: #EDEDED;
+}
+.certification-and-awards-section .certification-card .certification-card-content-wrapper .certification-card-description-wrapper {
+  padding-bottom: 20px;
+}
+.certification-and-awards-section .certification-card .certification-card-content-wrapper .certification-card-description-wrapper p {
+  margin-bottom: 0;
+}
+.certification-and-awards-section .certification-card .certification-card-content-wrapper .readmore-btn {
+  padding: 0;
+  background-color: none;
+  border: none;
+  color: #f47321;
+}
+.certification-and-awards-section .certification-card .certification-card-content-wrapper .certification-card-read-more-wrapper {
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  max-height: 0;
 }
 
 .call-to-action-section {
