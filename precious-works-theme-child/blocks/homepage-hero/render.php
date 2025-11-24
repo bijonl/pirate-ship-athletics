@@ -23,7 +23,7 @@ if(!$has_content) {
             <div class="homepage-hero-image-col left-image col h-100">
                 <div class="h-100 image-canvas" style="background-image: url('<?php echo $image_url ?>')"></div>
             </div>
-            <div class="homepage-hero-col col-5">
+            <div class="homepage-hero-col col-12 col-sm-5">
                 <div class="homepage-hero-content-wrapper">
                     <?php $display_title = 'h1'; ?>
                     <?php include(locate_template('blocks/partials/title-area.php')); ?>

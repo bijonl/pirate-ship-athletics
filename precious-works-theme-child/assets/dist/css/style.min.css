@@ -7292,6 +7292,7 @@ small, .small {
   line-height: 1;
 }
 .blog-archive-content-section .blog-posts-container .blog-posts-row .blog-posts-col .single-post-tile .post-meta-wrapper .single-post-date-wrapper {
+  display: none;
   padding-top: 15px;
 }
 .blog-archive-content-section .blog-posts-container .blog-posts-row .blog-posts-col .single-post-tile .post-meta-wrapper .single-post-date-wrapper p {
@@ -7670,6 +7671,7 @@ small, .small {
 }
 .recent-posts-section .recent-posts-container .recent-posts-row .recent-posts-col .single-post-tile:hover a .single-post-date-wrapper {
   color: #444444;
+  display: none;
 }
 .recent-posts-section .recent-posts-container .recent-posts-row .recent-posts-col .single-post-tile .single-post-image-wrapper {
   padding-bottom: 20px;
@@ -7800,6 +7802,11 @@ small, .small {
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (max-width: 575.98px) {
+  .homepage-hero-section .homepage-hero-container .homepage-hero-row .homepage-hero-image-col {
+    display: none;
+  }
 }
 .homepage-hero-section .homepage-hero-container .homepage-hero-row .homepage-hero-col .homepage-hero-content-wrapper .title-area-content-wrapper {
   padding-bottom: 30px;

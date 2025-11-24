@@ -32,7 +32,7 @@ $blogs_per_row = 3;
 
     <section class="blog-archive-content-section" id="blog-content-section">
         <div class="blog-posts-container container">
-          <div class="blog-posts-row row row-cols-<?php echo $blogs_per_row ?>">
+          <div class="blog-posts-row row row-cols-1 row-cols-sm-2 row-cols-lg-<?php echo $blogs_per_row ?>">
            <?php if($blogs->have_posts()) {
                     while($blogs->have_posts()) { 
                         $blogs->the_post(); 

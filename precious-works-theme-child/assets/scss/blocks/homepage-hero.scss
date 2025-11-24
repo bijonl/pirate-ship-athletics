@@ -26,6 +26,9 @@
                     background-repeat: no-repeat;
                     background-size: cover; 
                 }
+                @include media-breakpoint-down(sm) {
+                    display: none; 
+                }
             }
             .homepage-hero-col {
                 .homepage-hero-content-wrapper {
